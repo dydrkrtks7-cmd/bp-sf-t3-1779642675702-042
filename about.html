@@ -1,335 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <title>마포 셔츠룸 | 강남 셔츠룸의 허상을 벗겨낸 본질</title>
-    <meta name="description" content="강남 셔츠룸이라는 거대 담론 뒤에 숨겨진 마포의 진짜 고급 유흥. 서버 웜업의 정석, 그 치열한 경쟁과 압도적인 서비스의 디테일을 확인하세요.">
-    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 고급 유흥, 럭셔리 라운지, 서버 웜업, 에디토리얼 리뷰, 마포 유흥가">
-    <link rel="canonical" href="https://sf-t3-1779642675702-042.maphoshirts.com/about.html">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sf-t3-1779642675702-042.maphoshirts.com/about.html">
-    <meta property="og:title" content="마포 셔츠룸: 강남의 그늘, 마포의 빛">
-    <meta property="og:description" content="단순한 유흥이 아닌, 압도적인 서비스와 디테일로 무장한 공간의 재발견.">
-    <meta property="og:image" content="https://sf-t3-1779642675702-042.pages.dev/assets/cover-noir.jpg">
-    
-    <style>
-        /* 
-         * DESIGN SYSTEM: Editorial Luxury (Noir-Gold) 
-         * DNA: Serif, High Contrast, Cinematic, Minimalist 
-         */
-        :root {
-            --bg-color: #050505;
-            --text-primary: #e0e0e0;
-            --text-secondary: #888888;
-            --accent-gold: #c5a059;
-            --accent-gold-dim: #8a703e;
-            --border-color: #1f1f1f;
-            --font-serif: 'Times New Roman', 'Gidugu', serif;
-            --font-sans: 'Pretendard', sans-serif;
-            --spacing-unit: 4rem;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-serif);
-            font-weight: 400;
-            letter-spacing: -0.02em;
-        }
-
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            color: #fff;
-        }
-
-        h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
-            margin-bottom: 2rem;
-            color: var(--accent-gold);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            color: #fff;
-        }
-
-        p {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            font-weight: 300;
-        }
-
-        strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        /* Layout & Spacing */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        section {
-            padding: var(--spacing-unit) 0;
-        }
-
-        /* Navigation */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1.5rem 0;
-            background: rgba(5, 5, 5, 0.9);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            color: #fff;
-            text-decoration: none;
-            letter-spacing: 0.05em;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        .tel-link {
-            color: var(--accent-gold);
-            border: 1px solid var(--accent-gold);
-            padding: 0.5rem 1.2rem;
-            border-radius: 0;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .tel-link:hover {
-            background: var(--accent-gold);
-            color: #000;
-        }
-
-        /* Mobile Menu */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-        
-        .hamburger span {
-            display: block;
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            margin: 5px 0;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hamburger {
-                display: block;
-            }
-            .tel-link {
-                display: none;
-            }
-        }
-
-        /* Components */
-        .editorial-hero {
-            padding-top: calc(var(--spacing-unit) * 2);
-            padding-bottom: var(--spacing-unit);
-            text-align: left;
-        }
-
-        .meta-tag {
-            display: inline-block;
-            font-size: 0.8rem;
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: 1rem;
-            border: 1px solid var(--accent-gold-dim);
-            padding: 0.3rem 0.8rem;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 4rem;
-        }
-
-        @media (min-width: 768px) {
-            .content-grid {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-
-        .image-block {
-            width: 100%;
-            height: 400px;
-            background-color: #111;
-            margin-bottom: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image-block img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(120%);
-            transition: filter 0.5s ease;
-        }
-
-        .image-block:hover img {
-            filter: grayscale(0%) contrast(100%);
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .info-card {
-            background: #0a0a0a;
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .info-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-gold-dim);
-        }
-
-        .info-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--accent-gold);
-        }
-
-        .faq-section {
-            margin-top: 4rem;
-            border-top: 1px solid var(--border-color);
-            padding-top: 2rem;
-        }
-
-        .faq-item {
-            margin-bottom: 2rem;
-        }
-
-        .faq-question {
-            font-family: var(--font-serif);
-            font-size: 1.2rem;
-            color: #fff;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-
-        .faq-answer {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            padding-left: 1rem;
-            border-left: 2px solid var(--accent-gold-dim);
-        }
-
-        footer {
-            border-top: 1px solid var(--border-color);
-            padding: 4rem 0;
-            margin-top: 4rem;
-            text-align: center;
-        }
-
-        .footer-logo {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            color: #fff;
-            margin-bottom: 1rem;
-        }
-
-        .footer-text {
-            font-size: 0.8rem;
-            color: #444;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta charset="UTF-8">
+<title>마포 룸싸롱 가격 정보 – 정보</title>
+<meta name="description" content="마포 룸싸롱 실무 담당자를 위한 가격 구조, 인원 변동 대응 방안, 정산 절차 등을 상세히 정리했습니다. 현장 운영에 필요한 체크리스트 형태로 제공됩니다.">
+<meta name="keywords" content="마포, 룸싸롱, 가격, 인원 변동, 정산, 운영 가이드, 체크리스트">
+<link rel="canonical" href="https://mapo-room-note.infonest.online/about.html">
+<meta property="og:title" content="마포 룸싸롱 가격 정보 – 정보">
+<meta property="og:description" content="마포 룸싸롱 실무 담당자를 위한 가격 및 정산 가이드. 인원 변동, 시점별 요금 차이, 결제 방식 등을 한눈에 확인하세요.">
+<meta property="og:url" content="https://mapo-room-note.infonest.online/about.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mapo-room-note.infonest.online/og-image.jpg">
+<link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
+<header class="t-side-7rns">
+<h1>마포 룸싸롱 운영 가이드</h1>
+<nav class="nav-present">
+<ul>
+<li><a href="/index.html">홈</a></li>
+<li><a href="/price.html">가격 안내</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+<li><a href="/contact.html">문의</a></li>
+</ul>
+</nav>
+</header>
 
-    <header>
-        <div class="container nav-wrapper">
-            <a href="#" class="logo">AEGIS WARMER</a>
-            <nav class="nav-links">
-                <a href="#">Editorial</a>
-                <a href="#">Locations</a>
-                <a href="#">Philosophy</a>
-                <a href="#">Contact</a>
-            </nav>
-            <a href="tel:010-1234-5678" class="tel-link">RESERVATION</a>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+<main>
+<section class="t-side-7rns">
+<h2>가격 구조 개요</h2>
+<p>마포 지역 내 룸싸롱은 시간대와 방 규모에 따라 차등 가격이 적용됩니다. 기본 요금은 1시간당 150,000원이며, 심야(22시~02시)에는 20% 가산이 적용됩니다. 또한, 4인 이상 동시 이용 시 인당 요금이 10% 할인되는 구조를 채택하고 있어 인원 구성에 따라 비용 효율성을 최적화할 수 있습니다.</p>
+<p>특수 이벤트(생일, 기념일 등) 예약 시에는 사전 협의를 통해 고정 할인율(5~15%)을 부여받을 수 있습니다. 이때 할인 적용 여부는 사전 계약서에 명시되며, 추후 변동이 없도록 관리해야 합니다.</p>
+</section>
 
-<main><section class='editorial-hero'><p class='meta-tag'>용어 정리 · 지역 정보</p><h1>강남 셔츠룸에 대해 흔히 알려진 정보와 실제 운영 구조</h1><p>강남 셔츠룸을 검색하면 다양한 정보가 뒤섞여 나오는 경우가 많다. 이 페이지는 과장된 설명을 걷어내고, 실제 운영 방식과 이용 절차를 사실 위주로 정리했다.</p></section><div class='content-grid'><div class='image-block'></div><div class='card-container'><div class='info-card'><p>흔히 알려진 것과 달리, 셔츠룸의 요금은 단일 금액으로 고정되어 있지 않다. 이용 시간과 인원, 룸 등급에 따라 금액이 조합되어 산정되는 구조가 일반적이다.</p></div><div class='info-card'><p>매장 이용 방식도 지역마다 조금씩 다르다. 강남권은 예약 문의가 몰리는 시간대가 있어 사전 연락이 특히 권장되며, 마포 등 다른 권역은 상대적으로 여유 있게 안내되는 편이다.</p></div><div class='info-card'><p>룸의 형태나 인테리어보다 실제로는 인원 배치와 서비스 진행 방식이 이용 경험에 더 큰 영향을 준다는 점도 참고할 부분이다.</p></div><div class='info-card'><p>흔히 가격이 비싸다는 인식이 있지만, 실제로는 이용 시간과 인원 구성에 따라 폭이 넓어 상황에 따라 비용 차이가 크게 날 수 있다는 점을 참고할 필요가 있다.</p></div></div></div><section class='faq-section'><div class='faq-item'><p class='faq-question'>강남과 마포 지역의 셔츠룸 운영 방식에 차이가 있나요?</p><p class='faq-answer'>기본적인 운영 구조는 비슷하지만 지역별 수요 시간대와 예약 혼잡도에는 차이가 있어 방문 전 확인이 필요하다.</p></div><div class='faq-item'><p class='faq-question'>요금 정보를 미리 알 수 있는 방법이 있나요?</p><p class='faq-answer'>산정 기준이 매장마다 달라 정확한 금액은 문의를 통해 확인하는 것이 일반적이다.</p></div><div class='faq-item'><p class='faq-question'>예약은 어떻게 진행하나요?</p><p class='faq-answer'>전화로 인원과 희망 시간을 전달하고 안내를 받는 방식이 가장 일반적으로 사용된다.</p></div><div class='faq-item'><p class='faq-question'>초행인데 어떤 점을 먼저 확인해야 하나요?</p><p class='faq-answer'>방문 예정 시간과 인원을 정리한 뒤 문의하면 보다 정확한 안내를 받을 수 있다.</p></div><div class='faq-item'><p class='faq-question'>강남과 마포 외 다른 지역도 비슷한가요?</p><p class='faq-answer'>지역별 매장 수와 수요 시간대에는 차이가 있지만, 기본적인 이용 절차와 요금 산정 방식의 큰 틀은 비슷하게 적용되는 편이다.</p></div></section><section><h2>용어 정리</h2><dl><dt>웨이팅</dt><dd>이용 인원이 몰려 순서를 기다리는 상태를 뜻한다.</dd><dt>세팅</dt><dd>룸에 필요한 인원과 좌석을 배치하는 과정을 뜻한다.</dd><dt>피크타임</dt><dd>문의와 방문이 몰리는 시간대를 가리키는 표현이다.</dd></dl></section><div class='footer-text'><p class='footer-logo'>정보 요약</p><p>이 페이지는 강남 및 마포 지역 셔츠룸 이용과 관련된 일반적인 정보를 안내 목적으로 정리한 것이다. 문의: <a class='tel-link' href='tel:010-1234-5678'>010-1234-5678</a></p></div></main>
+<section class="t-side-7rns">
+<h2>인원 변동 대응 매뉴얼</h2>
+<p>예약 시 예상 인원을 기준으로 요금을 산정하지만, 실제 이용 인원은 현장에서 변동될 수 있습니다. 변동 발생 시 30분 이내에 담당자가 현장에 보고하도록 하며, 추가 인원에 대해서는 1인당 30,000원의 추가 요금을 부과합니다. 단, 인원 감소는 최소 1시간 전 통보 시 요금 환불이 가능합니다.</p>
+<p>인원 변동에 따른 서비스 종류(칵테일, 안주)도 자동 재조정됩니다. 예를 들어, 2인에서 5인으로 증가할 경우, 기본 안주 세트 외에 추가 안주 2종이 자동 포함되며, 이에 따른 원재료 비용은 별도 청구되지 않습니다.</p>
+</section>
 
+<section class="t-side-7rns">
+<h2>정산 절차 및 회계 관리</h2>
+<p>모든 이용 종료 후 10분 이내에 최종 청구서를 발행하고, 현금·카드·계좌이체 중 선택 가능한 결제 수단을 제공합니다. 결제 완료 시 전자 서명을 받아 내부 회계 시스템에 자동 기록되며, 일일 매출 보고서는 오전 9시까지 담당 매니저에게 자동 전송됩니다.</p>
+<p>월말 정산 시에는 부가세(VAT) 포함 금액과 할인 적용 내역을 명확히 구분해 보고합니다. 정산 오류가 발생한 경우, 24시간 이내에 재검증 절차를 진행하고, 차액은 다음 결제 주기에 반영합니다.</p>
+</section>
 
+<section class="t-side-7rns">
+<h2>시점별 체크리스트</h2>
+<p>예약 전(Pre‑booking) 단계에서는 고객의 목적(업무, 사교, 이벤트)과 예상 이용 시간, 인원 규모를 확인하고, 해당 요금표를 공유합니다. 이때 최소 48시간 전까지 계약서를 서명받아야 하며, 계약서에는 취소 정책과 인원 변동 조건을 명시합니다.</p>
+<p>이용 중(On‑site) 단계에서는 실시간 인원 파악을 위해 입장 시 QR코드 스캔을 의무화하고, 담당자는 매 30분마다 현황을 기록합니다. 이용 종료 후(Post‑service) 단계에서는 고객 만족도 설문을 진행하고, 설문 결과는 차기 서비스 개선에 활용됩니다.</p>
+</section>
+
+<section class="t-side-7rns">
+<h2>자주 묻는 질문 (FAQ)</h2>
+<p><strong>Q1. 야간 가산 요금은 언제부터 적용되나요?</strong><br>
+A1. 오후 10시부터 다음 날 새벽 2시까지는 기본 요금에 20% 가산이 자동 적용됩니다. 가산 요금은 사전 계약서에 명시되며, 별도 고지 없이 적용됩니다.</p>
+<p><strong>Q2. 인원 감소 시 환불은 어떻게 진행되나요?</strong><br>
+A2. 이용 시작 1시간 전까지 통보하면 해당 인원에 대한 요금 전액을 환불해 드립니다. 환불은 원 결제 수단으로 처리되며, 처리 시간은 영업일 기준 2~3일 이내입니다.</p>
+<p><strong>Q3. 카드 결제 시 추가 수수료가 발생하나요?</strong><br>
+A3. 카드 결제는 수수료를 포함한 총 금액을 청구하므로 별도 추가 비용은 없습니다. 다만, 특정 해외 카드의 경우 환율 차이로 인한 차액이 발생할 수 있습니다.</p>
+</section>
+</main>
+
+<footer class="t-foot-o6uo">
+<ul>
+<li><a href="/privacy.html">개인정보 처리방침</a></li>
+<li><a href="/terms.html">이용약관</a></li>
+<li><a href="/contact.html">문의하기</a></li>
+<li>&copy; 2026 마포 룸싸롱 운영팀</li>
+</ul>
+</footer>
 </body>
 </html>
